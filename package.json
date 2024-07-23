@@ -14,8 +14,11 @@
   "name": "teste-deploy",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": "18",
   "scripts": {
-    "dev": "tsx src/server.ts"
+    "dev": "tsx src/server.ts",
+    "build": "tsup src",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
